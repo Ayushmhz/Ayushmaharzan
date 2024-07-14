@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px; /* Adjusted padding for smaller screens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Added background color for better visibility */
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added box shadow for better separation */
+}
+
+.logo {
+    font-size: 1.8em; /* Adjusted font size */
+    color: red;
+    cursor: default;
+    margin-left: 20px; /* Adjusted margin */
+}
+
+.logo span {
+    color: darkblue;
+}
+
+.navigation a {
+    font-size: 1em; /* Adjusted font size */
+    color: rgb(66, 33, 28);
+    text-decoration: none;
+    margin-right: 20px; /* Adjusted margin */
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: #7d2ae8; /* Updated hover color */
+}
+
+.btn-talk {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px; /* Adjusted padding */
+    background: red;
+    border: 2px solid red;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-talk:hover {
+    color: red;
+    background: transparent;
+}
+
+/* Home section styles */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('Images/photo.png') no-repeat;
+    background-size: cover;
+    background-position: left 200px top; /* Adjusted background position */
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    overflow: hidden; /* Ensures content does not overflow */
+}
+
+/* Content styles */
+.content {
+    max-width: 100%;
+    color: #555;
+}
+
+.content h2 {
+    font-size: 2.5em; /* Adjusted font size */
+    margin-bottom: 10px; /* Added margin */
+}
+
+.content h2 span {
+    color: red;
+}
+
+.content h4 {
+    font-size: 1.8em; /* Adjusted font size */
+    margin-bottom: 20px; /* Added margin */
+}
+
+.content p {
+    font-size: 1em; /* Adjusted font size */
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 30px; /* Added margin */
+}
+
+.btn-group {
+    margin-top: 20px; /* Added margin */
+}
+
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: red;
+    border-radius: 2px;
+    font-weight: 500;
+    transition: .3s;
+    margin-right: 15px; /* Adjusted margin */
+}
+
+.btn-group a:hover {
+    background: transparent;
+    color: red;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .home {
+        background-position: left 150px top; /* Adjusted background position */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 30px; /* Adjusted padding */
+    }
+
+    .logo {
+        font-size: 1.5em; /* Adjusted font size */
+    }
+
+    .navigation a {
+        font-size: 0.9em; /* Adjusted font size */
+        margin-right: 15px; /* Adjusted margin */
+    }
+
+    .btn-talk {
+        padding: 8px 15px; /* Adjusted padding */
+    }
+
+    .home {
+        padding: 30px; /* Adjusted padding */
+        background-position: left 120px top; /* Adjusted background position */
+    }
+
+    .content h2 {
+        font-size: 2em; /* Adjusted font size */
+    }
+
+    .content h4 {
+        font-size: 1.5em; /* Adjusted font size */
+    }
+
+    .content p {
+        font-size: 0.9em; /* Adjusted font size */
+    }
+
+    .btn-group a {
+        padding: 8px 25px; /* Adjusted padding */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px; /* Adjusted padding */
+    }
+
+    .logo {
+        font-size: 1.2em; /* Adjusted font size */
+    }
+
+    .navigation a {
+        font-size: 0.8em; /* Adjusted font size */
+        margin-right: 10px; /* Adjusted margin */
+    }
+
+    .btn-talk {
+        padding: 6px 12px; 
+    }
+
+    .home {
+        padding: 20px; 
+        background-position: left 80px top; 
+    }
+
+    .content h2 {
+        font-size: 1.8em; 
+    }
+
+    .content h4 {
+        font-size: 1.2em; 
+    }
+
+    .content p {
+        font-size: 0.8em; 
+    }
+
+    .btn-group a {
+        padding: 6px 20px; 
+    }
+}
